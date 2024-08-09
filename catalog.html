@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: none; /* Hide actual images if using background images */
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product p {
+            color: #fff;
+            font-size: 0.9em;
+        }
+        .product::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay for text readability */
+            z-index: 1;
+        }
+        .product-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Catalog</h1>
+        <div class="catalog">
+            <div class="product" style="background-image: url('https://source.unsplash.com/250x250/?electronics');">
+                <div class="product-content">
+                    <h3>Smartphone Pro</h3>
+                    <p>The latest smartphone with cutting-edge features and a sleek design.</p>
+                </div>
+            </div>
+            <div class="product" style="background-image: url('https://source.unsplash.com/250x250/?laptop');">
+                <div class="product-content">
+                    <h3>High-End Laptop</h3>
+                    <p>Powerful laptop with high performance for both work and gaming.</p>
+                </div>
+            </div>
+            <div class="product" style="background-image: url('https://source.unsplash.com/250x250/?headphones');">
+                <div class="product-content">
+                    <h3>Noise-Canceling Headphones</h3>
+                    <p>Experience superior sound quality with comfortable, noise-canceling headphones.</p>
+                </div>
+            </div>
+            <div class="product" style="background-image: url('https://source.unsplash.com/250x250/?camera');">
+                <div class="product-content">
+                    <h3>Digital Camera</h3>
+                    <p>Capture stunning photos with this high-resolution digital camera.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
