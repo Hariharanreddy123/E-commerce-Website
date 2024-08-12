@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: whitesmoke;
+            background-image: url("vehicles.jpeg");
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 300px;
+            padding: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .product p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .product button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">Welcome to Our E-Commerce Store</h1>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="lorry.jpeg" alt="Lorry">
+            <h2>Lorry</h2>
+            <p>₹5,000,000</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="truck.jpeg" alt="Truck">
+            <h2>Truck</h2>
+            <p>₹3,000,000</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="bus.jpeg" alt="Bus">
+            <h2>Bus</h2>
+            <p>₹2,500,000</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="car.jpeg" alt="Car">
+            <h2>Car</h2>
+            <p>₹1,000,000</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    
+    <!-- Placeholder for analytics and chatbot -->
+    <div>
+        <h2>Analytics and Insights</h2>
+        <p>This section would include reports of frequent/unique visitors and statistical analysis.</p>
+    </div>
+    
+    <!-- Chatbot Integration -->
+    <div class="chatbot">
+        <iframe src="https://example.com/chatbot" width="350" height="500" frameborder="0"></iframe>
+    </div>
+    
+    <!-- Security Note -->
+    <footer>
+        <p>Security Note: Ensure HTTPS is enabled, and DDOS protection is in place. Use best practices for data privacy and protection.</p>
+    </footer>
+</body>
+</html>
